@@ -13,7 +13,7 @@ names(X_test)<-features[,2]
 #subject_test contains numerical values for subjects in test data. read the data into a data frame
 subject_test<-read.table("test/subject_test.txt")
 
-#Merge activity label nuerical values to X_test data
+#Merge subject_test numerical values to X_test data
 X_test_data <- cbind(X_test,subject_test)
 
 #Name the last column bound in the previous step. Call it "Subject"
